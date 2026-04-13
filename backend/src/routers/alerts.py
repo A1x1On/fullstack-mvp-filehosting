@@ -14,7 +14,7 @@ from src.services.alert_service import (
     count_alerts,
 )
 
-router = APIRouter(prefix="/alerts", tags=["alerts"])
+router = APIRouter(prefix="/api/alerts", tags=["alerts"])
 
 DB = Annotated[AsyncSession, Depends(get_async_db)]
 

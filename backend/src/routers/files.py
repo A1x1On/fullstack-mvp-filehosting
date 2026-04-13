@@ -28,7 +28,7 @@ from src.tasks.file_tasks.threats import scan_file_for_threats
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter(prefix="/files", tags=["files"])
+router = APIRouter(prefix="/api/files", tags=["files"])
 
 DB = Annotated[AsyncSession, Depends(get_async_db)]
 
