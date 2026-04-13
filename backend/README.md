@@ -168,7 +168,7 @@ POST /files/  →  scan_file_for_threats  →  extract_file_metadata  →  send_
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `POSTGRES_HOST` | `localhost` | PostgreSQL host |
-| `POSTGRES_PORT` | `5432` | PostgreSQL port |
+| `POSTGRES_PORT` | `5433` | PostgreSQL port |
 | `POSTGRES_USER` | `postgres` | Database user |
 | `POSTGRES_PASSWORD` | _(empty)_ | Database password |
 | `POSTGRES_DB` | `postgres` | Database name |
