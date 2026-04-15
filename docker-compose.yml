@@ -56,3 +56,4 @@ services:
 
 volumes:
   backend-db-volume:
+  redis_data:
