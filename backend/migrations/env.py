@@ -68,7 +68,7 @@ async def run_async_migrations() -> None:
 
     import os
 
-    db_url = f"postgresql+asyncpg://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@{os.getenv('POSTGRES_HOST')}:5432/{os.getenv('POSTGRES_DB')}"
+    db_url = f"postgresql+asyncpg://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@{os.getenv('POSTGRES_HOST')}:5433/{os.getenv('POSTGRES_DB')}"
     config.set_main_option("sqlalchemy.url", db_url)
     print(f"🔗 Using DB URL: {db_url}")  # debug
 
