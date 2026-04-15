@@ -13,7 +13,7 @@ services:
     image: postgres:16
     container_name: backend-db
     ports:
-      - "5433:5433"
+      - "5433:5432"
     env_file: ".env"
     volumes:
       - backend-db-volume:/var/lib/postgresql/data
