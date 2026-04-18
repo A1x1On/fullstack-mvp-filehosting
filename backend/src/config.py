@@ -2,11 +2,11 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    POSTGRES_HOST: str = "localhost"
+    POSTGRES_HOST: str = "backend-db"  # "localhost"
     POSTGRES_PORT: int = 5433
     POSTGRES_USER: str = "postgres"
-    POSTGRES_PASSWORD: str = ""
-    POSTGRES_DB: str = "postgres"
+    POSTGRES_PASSWORD: str = "postgres"
+    POSTGRES_DB: str = "test"
     POSTGRES_SSL: str = "false"
     CELERY_BROKER_URL: str = "redis://localhost:6379/0"
 
